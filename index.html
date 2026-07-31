@@ -7,31 +7,47 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
         body { background-color: #f4f6f9; color: #333; }
+        
         header { background-color: #0d3b66; color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
         header h1 { font-size: 22px; color: #f4d35e; }
+        
         .hero { background: #0d3b66; color: white; text-align: center; padding: 35px 20px; border-top: 1px solid rgba(255,255,255,0.1); }
         .hero h2 { font-size: 24px; margin-bottom: 10px; color: #f4d35e; }
         .hero p { font-size: 15px; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5; }
-        .btn-container { margin-top: 15px; }
+        
+        /* Buttons ke peeche naya background box */
+        .btn-container { 
+            margin-top: 20px; 
+            background-color: rgba(255, 255, 255, 0.1); 
+            padding: 15px; 
+            border-radius: 10px; 
+            display: inline-block; 
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
         .btn { display: inline-block; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 5px; font-size: 15px; }
         .btn-call { background-color: #25d366; color: white; }
         .btn-wa { background-color: #128C7E; color: white; }
+
         .container { max-width: 1200px; margin: 30px auto; padding: 0 15px; }
         .section-title { text-align: center; font-size: 24px; color: #0d3b66; margin-bottom: 25px; position: relative; }
         .section-title::after { content: ''; width: 80px; height: 3px; background: #ee9b00; display: block; margin: 8px auto 0; }
+
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-top: 4px solid #ee9b00; display: flex; flex-direction: column; }
         .card img { width: 100%; height: 240px; object-fit: cover; }
         .card-content { padding: 15px; text-align: center; flex-grow: 1; }
         .card-content h3 { font-size: 17px; color: #0d3b66; margin-bottom: 6px; }
         .card-content p { font-size: 13px; color: #666; }
+
         .info-section { background-color: #e0e1dd; padding: 25px; border-radius: 8px; margin-top: 40px; }
         .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         .info-box h4 { color: #0d3b66; margin-bottom: 8px; font-size: 18px; }
+
         footer { background: #0d3b66; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
 <body>
+
     <header>
         <div>
             <h1>S.K. Aluminium Fabricator</h1>
@@ -43,6 +59,7 @@
     <div class="hero">
         <h2>S.K. ALUMINIUM FABRICATOR & HOME DECORATOR</h2>
         <p>Dealers & Fabricators in UPVC Windows & Doors, Aluminium Partitions, Modular Kitchens, PVC Ceiling, Wall Panels, Toughened Glass, Steel Railings & ACP Sheets at best rates.</p>
+        
         <div class="btn-container">
             <a href="tel:8173833031" class="btn btn-call">📞 Call Now: 8173833031</a>
             <a href="https://wa.me/918173833031" target="_blank" class="btn btn-wa">💬 WhatsApp Chat</a>
@@ -52,14 +69,47 @@
     <div class="container">
         <h2 class="section-title">Hamare Work Designs & Portfolio</h2>
         <div class="grid">
-            <div class="card"><img src="IMG-20260731-WA0001.jpg"><div class="card-content"><h3>Aluminium & Glass Work</h3><p>Modern design and fitting.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0002.jpg"><div class="card-content"><h3>Interior Decor Work</h3><p>Quality finishing and setup.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0003.jpg"><div class="card-content"><h3>UPVC & Partition Work</h3><p>Durable material fitting.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0004.jpg"><div class="card-content"><h3>False Ceiling & Panels</h3><p>Attractive home decoration.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0005.jpg"><div class="card-content"><h3>Modular Kitchen Design</h3><p>Sleek and spacious cabinets.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0006.jpg"><div class="card-content"><h3>Glass & Railing Work</h3><p>Safe and stylish installation.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0007.jpg"><div class="card-content"><h3>Custom Fabrication</h3><p>Best quality workmanship.</p></div></div>
-            <div class="card"><img src="IMG-20260731-WA0008.jpg"><div class="card-content"><h3>Home Improvement</h3><p>Professional service.</p></div></div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0001.jpg" alt="Work 1">
+                <div class="card-content"><h3>Aluminium & Glass Work</h3><p>Modern design and fitting.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0002.jpg" alt="Work 2">
+                <div class="card-content"><h3>Interior Decor Work</h3><p>Quality finishing and setup.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0003.jpg" alt="Work 3">
+                <div class="card-content"><h3>UPVC & Partition Work</h3><p>Durable material fitting.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0004.jpg" alt="Work 4">
+                <div class="card-content"><h3>False Ceiling & Panels</h3><p>Attractive home decoration.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0005.jpg" alt="Work 5">
+                <div class="card-content"><h3>Modular Kitchen Design</h3><p>Sleek and spacious cabinets.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0006.jpg" alt="Work 6">
+                <div class="card-content"><h3>Glass & Railing Work</h3><p>Safe and stylish installation.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0007.jpg" alt="Work 7">
+                <div class="card-content"><h3>Custom Fabrication</h3><p>Best quality workmanship.</p></div>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260731-WA0008.jpg" alt="Work 8">
+                <div class="card-content"><h3>Home Improvement</h3><p>Professional service.</p></div>
+            </div>
+
         </div>
 
         <div class="info-section">
@@ -80,5 +130,6 @@
     <footer>
         <p>© 2026 S.K. Aluminium Fabricator & Home Decorator. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
